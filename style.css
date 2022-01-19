@@ -32,3 +32,8 @@ span
 	border-radius: 10px;
 	margin-bottom: 10px;
 }
+#inst
+{
+	width: 500px;
+	background-color: coral;
+}
