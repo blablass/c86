@@ -82,5 +82,31 @@ if(keypressed =='89'){
     blockupdate("yellow_wall.png");
 }
 }
-
-
+function up(){
+    if(playery >= 0){
+        playery = playery - block_height
+        canvas.remove(player_object)
+        playerupdate()
+    }
+}
+function down(){
+    if(playery <= 700){
+        playery = playery + block_height
+        canvas.remove(player_object)
+        playerupdate()
+    }
+}
+function left(){
+    if(playerx >= 0){
+        playerx = playerx - block_width
+        canvas.remove(player_object)
+        playerupdate()
+    }
+}
+function right(){
+    if(playerx <= 900){
+        playerx = playerx + block_width
+        canvas.remove(player_object)
+        playerupdate()
+    }
+}
